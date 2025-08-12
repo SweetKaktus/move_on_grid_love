@@ -1,0 +1,28 @@
+Je veux faire apparaître une grille au centre de 9x9
+Cette grille doit être linked à un tableau de 9x9
+Les endroits où c'est 0 on n'affiche rien
+Les endroits où c'est 1 on affiche un carré vert
+On peut déplacer le carré vert avec haut bas gauche droite
+
+
+12/08:
+Mon déplacement sur grille fonctionne !
+J'ai une limite : je ne peux avoir qu'une grille carrée
+
+Il faut que je refactorise mon code pour le rendre plus modulaire, séparer les éléments dans des fichiers, travailler avec de la POO, etc.
+
+Sur mes entités je dois ajouter un indice (vide, murs, ennemis, joueur, trésors)
+L'indice représentera l'objet sur la grille et permettra de définir les comportements si jamais le joueur se déplace sur une case occupée.
+
+Une fois que j'aurai pu faire tout ça je peux partir sur un jeu de labyrinthe
+
+A voir si je crée plein d'entités et je fais un jeu d'exploration de donjon (certain nombre de points à récolter pour sortir / scorer) ou si je fais 
+juste un jeu où on doit trouver la sortie (auquel cas il faut juste une entité vide, mur, joueur, arrivée)
+
+Je peux commencer par le labyrinthe simple et implémenter au fil de l'eau aussi
+
+Si je veux avoir des donjons plus complets il faut également que je sorte de ce problème de grille carrée, ou alors je palierai
+en foutant des murs partout où le joueur ne doit pas aller
+
+J'aimerai si possible faire un système où le donjon se dévoile au fil de l'exploration, à voir comment mettre en place, mais j'imagine qu'un
+simple paramètre "explored" à true ou false qui change d'état si le joueur est dans les cases adjacentes devrait pouvoir régler ce sujet.
