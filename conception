@@ -1,0 +1,7 @@
+Je veux faire apparaître une grille au centre de 9x9
+Cette grille doit être linked à un tableau de 9x9
+Les endroits où c'est 0 on n'affiche rien
+Les endroits où c'est 1 on affiche un carré vert
+On peut déplacer le carré vert avec haut bas gauche droite
+
+voir fonction pygame.draw
